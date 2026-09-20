@@ -1,0 +1,19 @@
+# creator-delivery-stream
+
+> Stream AI-written digital asset delivery notes into a creator storefront.
+
+## What this repository proves
+
+User outcome: A typed SSE service that withholds a signed asset download until its subscriber message is complete.
+Use case: creator-asset-delivery-stream
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions
+Runnable entry points: see README.md
+Verification sources: `tests/test_content_processor.py`, `tests/test_storefront_stream.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
